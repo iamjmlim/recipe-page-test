@@ -1736,10 +1736,6 @@
     min-width: 108px;
   }
   .pesto-stuffed-mushrooms-holl-container {
-    position: absolute;
-    top: 0;
-    left: 0.9px;
-    line-height: 30px;
     display: inline-block;
     width: 100%;
     height: 100%;
@@ -1754,7 +1750,6 @@
     z-index: 1;
   }
   .pesto-stuffed-mushrooms-holl-parent {
-    height: 90px;
     flex: 1;
     position: relative;
     max-width: 100%;
@@ -1792,7 +1787,7 @@
   .frame-parent7 {
     align-self: stretch;
     flex-direction: row;
-    padding: var(--padding-3xs) 0 var(--padding-4xs);
+    padding: var(--padding-sm) var(--padding-4xs);
     box-sizing: border-box;
     gap: var(--gap-xl-4);
   }
@@ -1863,10 +1858,6 @@
     height: 2px;
   }
   .pesto-stuffed-mushrooms-holl-container1 {
-    position: absolute;
-    top: 0;
-    left: 1.4px;
-    line-height: 30px;
     display: inline-block;
     width: 100%;
     height: 100%;
@@ -1875,7 +1866,6 @@
   .div3,
   .rectangle-753-copy-4-parent {
     align-self: stretch;
-    height: 90px;
     position: relative;
   }
   .div3 {
@@ -3184,7 +3174,7 @@
     align-items: flex-start;
     justify-content: center;
     box-sizing: border-box;
-    min-width: 237px;
+    min-width: 100px;
     max-width: 100%;
   }
   .submit:hover {
@@ -3212,7 +3202,7 @@
     align-items: flex-start;
     justify-content: center;
     box-sizing: border-box;
-    min-width: 237px;
+    min-width: 100px;
     max-width: 100%;
   }
   .cancel:hover {
@@ -3354,7 +3344,7 @@
     flex-direction: column;
     padding: var(--padding-4xs) 0 0;
     box-sizing: border-box;
-    min-width: 204px;
+    min-width: 100px;
   }
   .div8 {
     position: relative;
@@ -3413,7 +3403,7 @@
     flex-direction: column;
     padding: var(--padding-4xs) 0 0;
     box-sizing: border-box;
-    min-width: 204px;
+    min-width: 100px;
   }
   .div10 {
     position: relative;
@@ -3471,7 +3461,7 @@
     flex-direction: column;
     padding: var(--padding-4xs) 0 0;
     box-sizing: border-box;
-    min-width: 204px;
+    min-width: 100px;
   }
   .div12 {
     position: relative;
@@ -3529,7 +3519,7 @@
     flex-direction: column;
     padding: var(--padding-4xs) 0 0;
     box-sizing: border-box;
-    min-width: 204px;
+    min-width: 100px;
   }
   .div14 {
     position: relative;
@@ -3587,7 +3577,7 @@
     flex-direction: column;
     padding: var(--padding-4xs) 0 0;
     box-sizing: border-box;
-    min-width: 204px;
+    min-width: 100px;
   }
   .div16 {
     position: relative;
@@ -5435,6 +5425,7 @@
     .tag-copy-3-parent {
       padding-right: 269px;
       box-sizing: border-box;
+      overflow-y: auto;
     }
     .tag-copy-3-parent {
       padding-right: 73px;
@@ -5520,7 +5511,7 @@
       box-sizing: border-box;
     }
     .frame-parent2 {
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
     }
     .random-fact-about-gnocchi-with-parent {
       min-width: 100%;
@@ -5540,7 +5531,6 @@
 
     .frame-parent8, .frame-parent10 {
       min-width: 50%;
-      height: 300px;
     }
 
     .frame-parent9 {
@@ -5602,13 +5592,24 @@
     }
   }
   @media screen and (max-width: 450px) {
+    .photo1 {
+      width: 70px;
+      height: 70px;
+    }
+    .frame-parent38 {
+      font-size: 14px;
+    }
+    .rectangle-753-copy-41, .rectangle-753-copy-4 {
+      display: none;
+    }
     .frame-parent1{
       padding-left: 20px;
     }
 
-    .frame-parent8, .frame-parent10 {
-      height: 500px;
+    .frame-div {
+      min-width: unset;
     }
+
     .right-bar {
       display: none;
     }
@@ -5671,7 +5672,7 @@
       height: 9px;
     }
     .stars {
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
     }
     .div10,
     .div9 {
@@ -5682,7 +5683,7 @@
       height: 18px;
     }
     .stars1 {
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
     }
     .div11,
     .div12 {
@@ -5742,4 +5743,26 @@
       box-sizing: border-box;
     }
   }
-  
+  @media screen and (max-width: 375px) {
+    .rectangle-parent {
+      left: 30%;
+    }
+
+    .wrapper1 {
+      width: 80px;
+      height: 60px;
+      min-width: unset;
+    }
+
+    .frame-parent8, .frame-parent10{
+      font-size: 14px;
+    }
+  }
+
+  .yellow-underline-title {
+    border-bottom: 2px solid var(--color-goldenrod);
+  }
+
+  .stars, .star1, .stars2, .stars3, .star2 {
+    flex-wrap: nowrap;
+  }
